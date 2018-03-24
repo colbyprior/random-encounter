@@ -1,0 +1,53 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "random encounter",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetRandomEcnounter",
+                    "slots": [],
+                    "samples": [
+                        "another encounter",
+                        "new random encounter",
+                        "random encounter",
+                        "can I get a new encounter"
+                    ]
+                },
+                {
+                    "name": "SetParty",
+                    "slots": [
+                        {
+                            "name": "size",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "level",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "my party is level {level} and has {size} adventurers",
+                        "my party has {size}  level {level} adventurers",
+                        "my party has {size}  level {level} party members",
+                        "my party is level {level} and has {size} party members",
+                        "my party is level {level} and has {size} people",
+                        "my party has {size}  level {level} people "
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
